@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --main-color: #7a679e;
+  --big-font: 4.5rem;
+  --h2-font: 3.3rem;
+  --h3-font: 2rem;
+  --normal-font: 1rem;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 20px 14%;
+  transition: all 0.35s ease;
+  background-color: #faf9f9;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+.logo-img {
+  margin-right: 10px; /* Adjust the spacing as needed */
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 10px 25px;
+  font-size: var(--normal-font);
+  transition: all 0.36s ease;
+}
+.navlist a:hover {
+  color: var(--main-color);
+}
+.header-icons i {
+  font-size: 32px;
+  color: var(--text-color);
+  margin-right: 20px;
+  transition: all 0.36s ease;
+}
+.header-icons i:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 34px;
+  color: var(--text-color);
+  z-index: 10001;
+  margin-right: 20px;
+  display: none;
+}
+section {
+  padding: 100px 14%;
+}
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(Images/0006M_Marcatante_project1_ShallowDepth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.home-text {
+  background: #faf9f9d0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.home-text h1 {
+  font-size: var(--h2-font);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.4rem;
+}
+.home-text span {
+  font-size: var(--h3-font);
+}
+.home-text p {
+  font-size: var(--normal-font);
+  font-weight: 500;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.35s ease;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  background: var(--text-color);
+}
+.featured-content img {
+  height: 300px;
+  width: 300px;
+}
+.center-text {
+  text-align: center;
+}
+.center-text h2 {
+  font-size: medium;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1.3rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.row img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.fea-text {
+  flex: 1;
+}
+
+.arrow {
+  margin-left: auto;
+}
+.row .arrow i {
+  height: 35px;
+  width: 35px;
+  background: #7a679e;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+}
+.row:hover {
+  transform: scale(0.9) translateY(-5px);
+  cursor: pointer;
+}
+
+.row:hover i {
+  background: #000000;
+}
+
+.brand {
+  padding: 50px 14%;
+}
+.brand .main img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.new-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.row img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fea-text {
+  flex: 1;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.center-text h2 {
+  font-size: var(--h2-font);
+}
+.contactform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Images/0009M_Marcatante_project1_WormShallow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactform form {
+  width: 30rem;
+  text-align: center;
+}
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+.input-box .input-field {
+  width: 45%;
+}
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 12px 0;
+  color: #ffffff;
+}
+
+.field .item::placeholder {
+  color: #f8f9ff;
+}
+.field .error-txt {
+  font-size: 14.5px;
+  display: none;
+  color: brown;
+  text-align: left;
+  margin: -5px 0 10px;
+}
+form .textarea-field .item {
+  resize: none;
+}
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+button {
+  display: inline-block;
+  padding: 13px 25px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.35s ease;
+}
