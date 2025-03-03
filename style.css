@@ -77,6 +77,7 @@ header {
   margin-right: 20px;
   display: none;
 }
+
 section {
   padding: 100px 14%;
 }
@@ -288,4 +289,45 @@ button {
   font-weight: 600;
   border-radius: 5px;
   transition: all 0.35s ease;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 7px 4%;
+    transition: 0.2s;
+  }
+  header.sticky {
+    padding: 14px 4%;
+    transition: 0.2s;
+  }
+  section {
+    padding: 80x 4%;
+    transition: 0.1s;
+  }
+}
+@media (max-width: 670px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .header-icons {
+    display: inline-flex;
+  }
+  .navlist {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 280px;
+    height: 120vh;
+    background: var(--bg-color);
+    display: flex;
+    align-items: column;
+    flex-direction: column;
+    padding: 150px 30px;
+    transition: all 0.45s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 1.2rem 0;
+  }
 }
