@@ -330,4 +330,19 @@ button {
     display: block;
     margin: 1.2rem 0;
   }
+  .navlist.open {
+    left: 0;
+  }
+}
+top {
+  height: 35px;
+  width: 35px;
+  background: #7a679e;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
 }
